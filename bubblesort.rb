@@ -5,10 +5,9 @@ def bubble_sort(arr)
     if arr[i] > arr[i + 1]
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
       ischanged = true
-      i += 1
-    else
-      i += 1
+
     end
+    i += 1
     if i == arr.length - 1 and ischanged == true
       i = 0
       ischanged = false
@@ -27,10 +26,9 @@ def bubble_sort_by(arr)
     if yield(arr[i], arr[i + 1]).positive?
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
       ischanged = true
-      i += 1
-    else
-      i += 1
+
     end
+    i += 1
     if i == arr.length - 1 and ischanged == true
       i = 0
       ischanged = false
