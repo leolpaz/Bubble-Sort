@@ -13,7 +13,7 @@ def bubble_sort(arr)
       ischanged = false
     end
   end
-  return arr
+ arr
 end
 
 a = [1, 6, 2, 3, 7, 9, 0, 10, 44, 65, 93, 41, 50, 1000, 12, 11, 4]
@@ -34,9 +34,10 @@ def bubble_sort_by(arr)
       ischanged = false
     end
   end
-  return arr
+ arr
 end
 
 bubble_sort_by(%w[hi hello hey heeeey hiii hellooooooo hiii]) do |left, right|
   left.length - right.length
 end
+
